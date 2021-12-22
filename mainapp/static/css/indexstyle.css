@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    
+}
+
+body{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+   
+}
+
+
+
+
+header{
+    width: 100%;
+    height: 250px;
+}
+
+header img{
+
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height:250px;
+    margin-bottom: 0px;
+    
+}
+
+nav{
+    background:black;
+    width: 100%;
+    height: 60px;   
+}
+
+
+#Mujer{
+    color: magenta;
+    float: left;
+    margin: 55px;
+    margin-left: 200px;     
+}
+
+#BarraM{
+    margin-top: -47px;
+    text-align: center;
+    margin-left: 160px;
+}
+
+
+#Hombre{
+    color:deepskyblue;
+    float: left;
+    margin: 55px; 
+}
+
+#BarraH{
+    margin-top: -47px;
+    text-align: center;
+    margin-left: 355px;
+}
+
+#Accesorios{
+    color: orange;
+    float: left;
+    margin: 55px;
+}
+
+#BarraA{
+    margin-top: -47px;
+    text-align: center;
+    margin-left: 560px;
+
+}
+#Ofertas{
+    color: orangered;
+    float: left;
+    margin: 55px;
+    outline: none;
+    border: 0px;
+    outline-style: none;
+    margin-top: 57px;
+}
+
+#Carrito{
+    color: white;
+    margin-top: 57px;
+    margin-left: 40px;
+}
+
+
+#Registro{
+    text-align: center;
+    margin-right:20px;
+}
+
+#Sesion{
+    color: blue;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 17px;
+    
+}
+
+#logout{
+    
+    float: left;
+    margin-left: 130px;
+    outline: none;
+    border: 0px;
+    outline-style: none;
+    margin-top: 62px;
+    color: blue;
+    font-size: 17px;
+    
+}
+
+
+.clearfix{
+    clear: both;
+}
+
+#content{
+    float: left;
+    width: 80%;
+    background:lightgray;
+    height: 60%;
+    margin-top: 0px;
+
+}
+
+
+.carousel-inner{
+    
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin: auto;
+    
+}
+
+.carousel-inner img{
+    width: 600px;
+    height: 600px;
+    
+}    
+
+aside{
+    float: left;
+    width: 20%;
+    background: gray;
+    height: 60%;
+        
+}
+form input[type="text"]{
+    width: 180px;
+    height: 35px;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-color:black;
+    text-align: center;
+    outline: none;
+}
+
+form input[type="submit"]{
+    cursor: pointer;
+    width: 60px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+aside img{
+    width: 180px;
+    height: 70px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+aside a img{
+    width: 100px;
+    height: 90px;
+    margin-top: 70px;
+    margin-left: 85px;
+    text-align: center;
+}
+
+#facebook{
+    width: 80px;
+    height: 60px;
+    margin-left: 99px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.novedades{
+    
+    text-align: center;
+    float:left;
+    width: 80%;
+    height:50px;
+    background: orangered; 
+    color: white;
+    
+}
+
+.novedades a{
+    
+    background-attachment: fixed;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 50px;
+    font-size: 22px;
+    background-color: black;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 100%;
+  
+   
+}
+
+.detalle{
+    float: left;
+    width: 20%;
+    height: 50px;
+    background: gray;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    float: left;
+    background: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 11px;
+}
+
+footer b{
+    color: white;
+}

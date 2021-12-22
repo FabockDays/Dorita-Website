@@ -1,0 +1,31 @@
+{% extends 'layouts/layoutusuario.html' %}
+
+{%block title%}
+    
+{%endblock%}
+|Registro
+
+{% block content %}
+
+    {{formulario_registro.errors}}
+
+    <h4>Registrate!</h4>
+
+    <h2>Accedé a nuestra sección de ofertas exclusiva para usuarios registrados!</h2>
+
+    
+
+    <form method="post" action="">
+
+        {% csrf_token %}
+
+        {% for field in formulario_registro %}
+            {{field.label}}
+            {{field}}
+        {% endfor %}
+
+        <input type="submit" value="Registrarse"/>
+
+
+    </form>
+{% endblock  %}

@@ -1,0 +1,89 @@
+{% extends 'layouts/layoutusuario.html' %}
+
+{% load static %}
+
+
+{% block title %}
+    | Mochilas
+{% endblock %}
+
+{% block content %}
+
+    <h4 align="center">Mochilas</h4>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/accesorios/mochilas/mochila1.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Mochila Dragon Ball</h5>
+            <p class="card-text"><b>Talles :</b> único<br><b>Material :</b> Cuerina  <br><b>Codigo :</b> #1770</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $2600
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">¡Importante!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Debido a la alta demanda, los pedidos se realizan solo a través de nuestro</strong></p>
+                            <a href="https://www.instagram.com/dorita.indumentaria/" target="_blank"><img src="{% static 'images/instagram dorita.png' %}" id="insta"  /></a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/accesorios/mochilas/mochila2.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Mochila Floreada</h5>
+            <p class="card-text"><b>Talles :</b> único<br><b>Material :</b> Cuerina  <br><b>Codigo :</b> #1185</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1900
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/accesorios/mochilas/mochila3.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Mochila Triangulos</h5>
+            <p class="card-text"><b>Talles :</b> único<br><b>Material :</b> Cuerina  <br><b>Codigo :</b> #1115</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1980
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/accesorios/mochilas/mochila4.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Mochila Loved</h5>
+            <p class="card-text"><b>Talles :</b> único<br><b>Material :</b> Cuerina  <br><b>Codigo :</b> #1225</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $2300
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/accesorios/mochilas/mochila5.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Mochila Siameses</h5>
+            <p class="card-text"><b>Talles :</b> único<br><b>Material :</b> Cuerina  <br><b>Codigo :</b> #1590</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $2800
+            </button>
+        </div>
+    </div>
+   
+    
+
+{% endblock %}
+
+

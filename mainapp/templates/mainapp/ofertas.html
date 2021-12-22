@@ -1,0 +1,195 @@
+{% extends 'layouts/layoutropa.html' %}
+
+{%load static%}
+
+{%block title%}
+    |Ofertas
+{%endblock%}
+
+{%block content%}
+    {% if messages %}
+
+        {%for message in messages%}
+            <div class="alert alert-success">
+                {{message}}
+            </div>
+        {% endfor %}
+
+    {% endif %}
+
+    <h3>Ofertas!!!</h3>
+
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta1.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Campera Adidas </h5>
+            <p class="card-text"><b>Talles :</b> S,M,L<br><b>Material :</b> Lycra <br><b>Codigo</b> : #5005</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $2900
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta2.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Campera Rosa</h5>
+            <p class="card-text"><b>Talles :</b> S,M,L<br><b>Material :</b> Lycra <br><b>Codigo</b> : #5100</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $2500
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">¡Importante!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Debido a la alta demanda, los pedidos se realizan solo a través de nuestro</strong></p>
+                            <a href="https://www.instagram.com/dorita.indumentaria/" target="_blank"><img src="{% static 'images/instagram dorita.png' %}" id="insta"  /></a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta3.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Remera Gato</h5>
+            <p class="card-text"><b>Talles :</b> S,M,L,XL<br><b>Material :</b> Algodón<br><b>Codigo</b> : #5200</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1200
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta4.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Remera W.Woman</h5>
+            <p class="card-text"><b>Talles :</b> S,M,L<br><b>Material :</b> Algodón <br><b>Codigo</b> : #5300</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1300
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta5.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Remera Sol y Luna</h5>
+            <p class="card-text"><b>Talles :</b> S,M,L<br><b>Material :</b> Algodón/Lycra <br><b>Codigo</b> : #5370</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1250
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta6.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Musculosa Leon</h5>
+            <p class="card-text"><b>Talles :</b> S,M,L,XL<br><b>Material :</b> Algodón <br><b>Codigo</b> : #5890</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1300
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta7.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Musculosa Skate</h5>
+            <p class="card-text"><b>Talles :</b> S,M,L<br><b>Material :</b> Algodón <br><b>Codigo</b> : #5677</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1180
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta8.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Camisa C/Plumas</h5>
+            <p class="card-text"><b>Talles :</b> S,M,L<br><b>Material :</b> Algodón/Tela <br><b>Codigo</b> : #5899</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1900
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta9.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Camisa Celeste</h5>
+            <p class="card-text"><b>Talles :</b> S,M,L<br><b>Material :</b> Algodón/Tela <br><b>Codigo</b> : #5500</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1800
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta10.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Camisa Rayada</h5>
+            <p class="card-text"><b>Talles :</b> M,L,XL<br><b>Material :</b> Algodón/Tela <br><b>Codigo</b> : #5750</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1680
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta11.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Ojotas Marilyn</h5>
+            <p class="card-text"><b>Talles :</b> único<br><b>Material :</b> Goma <br><b>Codigo</b> : #5100</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $2280
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta12.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Ojotas Tigre</h5>
+            <p class="card-text"><b>Talles :</b> único<br><b>Material :</b> Goma <br><b>Codigo</b> : #5300</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1980
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta13.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Ojotas Surf</h5>
+            <p class="card-text"><b>Talles :</b> único<br><b>Material :</b> Goma <br><b>Codigo</b> : #5500</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1650
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta14.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Ojotas Flores</h5>
+            <p class="card-text"><b>Talles :</b> único<br><b>Material :</b> Goma <br><b>Codigo</b> : #5700</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $1800
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <img src="{% static 'images/ofertas/oferta15.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Ojotas Gatitos</h5>
+            <p class="card-text"><b>Talles :</b> M,L,XL<br><b>Material :</b> Goma <br><b>Codigo</b> : #5990</br></p>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                $2000
+            </button>
+        </div>
+    </div>
+{%endblock%}

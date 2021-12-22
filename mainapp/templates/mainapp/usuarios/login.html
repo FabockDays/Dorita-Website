@@ -1,0 +1,50 @@
+{% extends 'layouts/layoutusuario.html' %}
+
+{% load static %}
+
+
+{%block title%}
+    | Login
+{%endblock%}
+
+{% block content %}
+
+    {% if messages %}
+
+        {%for message in messages%}
+            <div class="alert alert-warning">
+                {{message}}
+            </div>
+        {% endfor %}
+
+    {% endif %}
+
+    <h4>Login</h4>
+
+    <h2>¡Bienvenidos! Ingresá y accedé a nuestros descuentos para usuarios registrados</h2>
+
+    
+
+    <form method="post" action="">
+
+        {% csrf_token %}
+        
+        <label for="username">Nombre de usuario : </label>
+
+        <input type="text" name="username"/>
+
+        <label for="password">Contraseña : </label>
+
+        <input type="password" name="password"/>
+
+        <input type="submit" value="Login"/>
+
+
+    </form>
+
+    <img src="{% static 'images/seguinos.png' %}" id="seguinos" />
+
+    <a href="https://www.instagram.com/dorita.indumentaria/" target="_blank"><img src="{% static 'images/instagram dorita.png' %}" id="insta"  /></a>
+
+    <a href="https://www.facebook.com/DoritaIndumentaria/" target="_blank"><img src="{% static 'images/dorita facebook.png' %}" id="facebook" /></a>
+{% endblock  %}
